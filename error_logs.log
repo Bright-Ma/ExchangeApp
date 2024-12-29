@@ -1,0 +1,10 @@
+2024/12/29 17:27:10 [2024-12-29 17:27:10] Function: CreateArticle, Error: Key: 'Article.Title' Error:Field validation for 'Title' failed on the 'required' tag
+2024/12/29 17:28:23 [2024-12-29 17:28:23] Function: CreateArticle, Error: Key: 'Article.Title' Error:Field validation for 'Title' failed on the 'required' tag
+2024/12/29 17:28:25 [2024-12-29 17:28:25] Function: CreateArticle, Error: Key: 'Article.Title' Error:Field validation for 'Title' failed on the 'required' tag
+2024/12/29 19:49:01 [2024-12-29 19:49:01] Function: CreateArticle, Error: Key: 'Article.Title' Error:Field validation for 'Title' failed on the 'required' tag
+2024/12/29 19:49:09 [2024-12-29 19:49:09] Function: CreateArticle, Error: Key: 'Article.Title' Error:Field validation for 'Title' failed on the 'required' tag
+2024/12/29 19:49:22 [2024-12-29 19:49:22] Function: CreateArticle, Error: Key: 'Article.Title' Error:Field validation for 'Title' failed on the 'required' tag
+Key: 'Article.Preview' Error:Field validation for 'Preview' failed on the 'required' tag
+2024/12/29 19:50:23 [2024-12-29 19:50:23] Function: CreateArticle, Error: Key: 'Article.Title' Error:Field validation for 'Title' failed on the 'required' tag
+2024/12/29 19:50:57 [2024-12-29 19:50:57] Function: CreateArticle, Error: Key: 'Article.Title' Error:Field validation for 'Title' failed on the 'required' tag
+2024/12/29 20:08:38 [2024-12-29 20:08:38] Function: CreateArticle, Error: Key: 'Article.Title' Error:Field validation for 'Title' failed on the 'required' tag

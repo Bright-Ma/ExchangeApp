@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	consumer "exchangeapp/comsumer"
 	"log"
 	"net/http"
 	"os"
@@ -18,6 +19,7 @@ func main() {
 	r := router.SetupRouter()
 
 	port := config.AppConfig.App.Port
+	go consumer.ConsumeArticleQueue()
 
 	if port == "" {
 		port = ":8080"
