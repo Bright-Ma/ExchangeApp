@@ -6,9 +6,10 @@ import (
 	"exchangeapp/models"
 	"github.com/goccy/go-json"
 	"log"
+	"os"
+	"os/signal"
 )
 
-// 消费 elasticsearch_queue
 func ConsumeElasticsearchQueue() {
 	msgs, err := global.RabbitMQChannel.Consume(
 		"elasticsearch_queue", // 队列名称
@@ -24,18 +25,30 @@ func ConsumeElasticsearchQueue() {
 	}
 
 	log.Println("Start consuming elasticsearch_queue")
-	for msg := range msgs {
-		var logEntry models.ErrorLog
-		if err := json.Unmarshal(msg.Body, &logEntry); err != nil {
-			log.Printf("Failed to parse log message: %s", err)
-			continue
-		}
 
-		controllers.WriteLogToElasticsearch(logEntry)
+	// 创建一个用于监听中断信号的 channel
+	quit := make(chan os.Signal, 1)
+	signal.Notify(quit, os.Interrupt)
+
+	// 处理队列中的消息
+	for {
+		select {
+		case msg := <-msgs:
+			var logEntry models.ErrorLog
+			if err := json.Unmarshal(msg.Body, &logEntry); err != nil {
+				log.Printf("Failed to parse log message: %s", err)
+				continue
+			}
+
+			controllers.WriteLogToElasticsearch(logEntry)
+
+		case <-quit:
+			log.Println("Received shutdown signal, stopping consumer...")
+			return
+		}
 	}
 }
 
-// 消费 file_queue
 func ConsumeFileQueue() {
 	msgs, err := global.RabbitMQChannel.Consume(
 		"file_queue", // 队列名称
@@ -51,13 +64,26 @@ func ConsumeFileQueue() {
 	}
 
 	log.Println("Start consuming file_queue")
-	for msg := range msgs {
-		var logEntry models.ErrorLog
-		if err := json.Unmarshal(msg.Body, &logEntry); err != nil {
-			log.Printf("Failed to parse log message: %s", err)
-			continue
-		}
 
-		controllers.WriteLogToFile(logEntry)
+	// 创建一个用于监听中断信号的 channel
+	quit := make(chan os.Signal, 1)
+	signal.Notify(quit, os.Interrupt)
+
+	// 处理队列中的消息
+	for {
+		select {
+		case msg := <-msgs:
+			var logEntry models.ErrorLog
+			if err := json.Unmarshal(msg.Body, &logEntry); err != nil {
+				log.Printf("Failed to parse log message: %s", err)
+				continue
+			}
+
+			controllers.WriteLogToFile(logEntry)
+
+		case <-quit:
+			log.Println("Received shutdown signal, stopping consumer...")
+			return
+		}
 	}
 }

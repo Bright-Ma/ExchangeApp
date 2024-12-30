@@ -3,11 +3,11 @@ app:
   port: :3000
 
 database:
-  dsn: root:dl1357135@tcp(127.0.0.1:3306)/db2?charset=utf8mb4&parseTime=True&loc=Local
+  dsn: root:dl1357135@tcp(host.docker.internal:3306)/db2?charset=utf8mb4&parseTime=True&loc=Local
   MaxIdleConns: 11
   MaxOpenCons: 114
 
 redis:
-  addr: localhost:6379
+  addr: host.docker.internal:6379
   DB: 0
   Password: ""

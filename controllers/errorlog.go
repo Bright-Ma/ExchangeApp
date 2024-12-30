@@ -23,5 +23,5 @@ func WriteLogToFile(logEntry models.ErrorLog) {
 
 func WriteLogToElasticsearch(logEntry models.ErrorLog) {
 	// Elasticsearch 写入逻辑
-	log.Printf("Writing log to Elasticsearch: %v", logEntry)
+	//log.Printf("Writing log to Elasticsearch: %v", logEntry)
 }

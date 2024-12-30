@@ -16,15 +16,16 @@ func PublishToQueue(queueName string, message interface{}) error {
 		return err
 	}
 
-	// 发布到 RabbitMQ 队列
+	// 发布到 RabbitMQ 队列，设置持久化
 	err = global.RabbitMQChannel.Publish(
 		"",        // 默认交换机
 		queueName, // 队列名称
 		false,     // 强制模式
 		false,     // 是否立即
 		amqp.Publishing{
-			ContentType: "application/json",
-			Body:        body,
+			ContentType:  "application/json",
+			Body:         body,
+			DeliveryMode: amqp.Persistent, // 消息持久化
 		},
 	)
 	if err != nil {

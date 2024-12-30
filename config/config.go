@@ -44,5 +44,5 @@ func InitConfig() {
 	initDB()
 	initRedis()
 	InitRabbitMQ()
-	InitLogConsumers()
+
 }

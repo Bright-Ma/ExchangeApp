@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	consumer "exchangeapp/comsumer"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -19,7 +19,6 @@ func main() {
 	r := router.SetupRouter()
 
 	port := config.AppConfig.App.Port
-	go consumer.ConsumeArticleQueue()
 
 	if port == "" {
 		port = ":8080"
@@ -29,8 +28,10 @@ func main() {
 		Addr:    port,
 		Handler: r,
 	}
-
+	config.InitLogConsumers()
+	config.InitArticleConsumers()
 	go func() {
+		fmt.Println("Server is running on port", port)
 		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 			log.Fatalf("listen: %s\n", err)
 		}

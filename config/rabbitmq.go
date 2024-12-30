@@ -10,7 +10,8 @@ import (
 func InitRabbitMQ() {
 	// 连接到 RabbitMQ
 	var err error
-	rabbitMQURL := "amqp://guest:guest@localhost:5669/"
+	//rabbitMQURL := "amqp://guest:guest@localhost:5669/"
+	rabbitMQURL := "amqp://guest:guest@rabbitmq:5672/"
 
 	global.RabbitMQConn, err = amqp.Dial(rabbitMQURL)
 	if err != nil {

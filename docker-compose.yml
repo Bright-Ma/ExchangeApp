@@ -1,0 +1,26 @@
+version: "3.9"
+
+networks:
+  my-network:
+    driver: bridge
+
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    networks:
+      - my-network
+    ports:
+      - "5669:5672"      # RabbitMQ 服务端口
+      - "15670:15672"    # RabbitMQ 管理界面端口
+
+  my-app:
+    image: my-app:v1
+    container_name: my-app
+    networks:
+      - my-network
+    ports:
+      - "3000:3000"      # 应用服务端口
+    depends_on:
+      - rabbitmq         # 确保 RabbitMQ 在 my-app 启动前运行
+    restart: always      # 容器崩溃时自动重启
