@@ -14,6 +14,27 @@ services:
       - "5669:5672"      # RabbitMQ 服务端口
       - "15670:15672"    # RabbitMQ 管理界面端口
 
+  mysql:
+    image: mysql:latest
+    container_name: mysql-container
+    networks:
+      - my-network
+    environment:
+      MYSQL_ROOT_PASSWORD: dl1357135      # MySQL 根密码
+      MYSQL_DATABASE: db2                  # MySQL 默认数据库
+    ports:
+      - "3307:3306"                        # MySQL 服务端口
+    restart: always                        # 容器崩溃时自动重启
+
+  redis:
+    image: redis:latest
+    container_name: redis-container
+    networks:
+      - my-network
+    ports:
+      - "6379:6379"                       # Redis 服务端口
+    restart: always                        # 容器崩溃时自动重启
+
   my-app:
     image: my-app:v1
     container_name: my-app
@@ -23,4 +44,6 @@ services:
       - "3000:3000"      # 应用服务端口
     depends_on:
       - rabbitmq         # 确保 RabbitMQ 在 my-app 启动前运行
+      - mysql            # 确保 MySQL 在 my-app 启动前运行
+      - redis            # 确保 Redis 在 my-app 启动前运行
     restart: always      # 容器崩溃时自动重启
