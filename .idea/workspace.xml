@@ -5,90 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="147d0eb7-c3f7-42a4-bf9d-4b4bcd38cade" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/.idea/ExchangeApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/config/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/config/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/config/db.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/config/redis.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/controllers/article_controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/controllers/auth_controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/controllers/exchange_rate_controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/controllers/like_controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/global/global.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/middlewares/auth_middleware.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/models/article.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/models/exchange_rate.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/models/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/router/router.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/test/testpost.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/utils/utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/__VLS_types.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/__VLS_types.d_1.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/index_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/App.vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/axios.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/components/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/components/Login.vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/components/Register.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/components/Register.vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/public/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/shims-vue.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/store/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/store/auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/types/Article.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/CurrencyExchangeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/CurrencyExchangeView.vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/HomeView.vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/NewsDetailView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/NewsDetailView.vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/NewsView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/NewsView.vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/vite-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/tsconfig.node.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/vite.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ExchangeApp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exchangeapp_backend/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/Exchangeapp_backend/router/router.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/db.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/redis.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/article_controller.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth_controller.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/exchange_rate_controller.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/like_controller.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/global/global.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/auth_middleware.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/article.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/exchange_rate.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/router.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testpost.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/utils.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +71,8 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
