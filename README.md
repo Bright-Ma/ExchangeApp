@@ -1,6 +1,6 @@
 # ExchangeApp
-这是货币兑换系统，参考的是InkkaPlum 频道
+本项目是：货币兑换系统
 
+参考的是InkkaPlum 频道，对此系统进行二次开发
 
-
-你好我是Lk
+原项目地址：[InkkaPlum 的项目](https://github.com/Slumhee/Web003Gin-01_gingormtutorials/tree/main)

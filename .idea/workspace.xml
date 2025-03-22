@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="147d0eb7-c3f7-42a4-bf9d-4b4bcd38cade" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/.idea/ExchangeApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/config/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/config/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/config/redis.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/controllers/article_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/controllers/auth_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/controllers/exchange_rate_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/controllers/like_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/global/global.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/middlewares/auth_middleware.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/models/article.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/models/exchange_rate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/models/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/router/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/test/testpost.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_backend/utils/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/__VLS_types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/__VLS_types.d_1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/index_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/App.vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/axios.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/components/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/components/Login.vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/components/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/components/Register.vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/public/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/router/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/shims-vue.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/store/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/store/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/types/Article.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/CurrencyExchangeView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/CurrencyExchangeView.vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/HomeView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/HomeView.vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/NewsDetailView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/NewsDetailView.vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/NewsView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/views/NewsView.vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/src/vite-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/tsconfig.node.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exchangeapp_frontend/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ExchangeApp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/db.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/redis.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/article_controller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth_controller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/exchange_rate_controller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/like_controller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/global/global.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/auth_middleware.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/article.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/exchange_rate.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testpost.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils.go" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://C:/Program Files/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="dev/001" />
+                    <option name="lastUsedInstant" value="1742629089" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1742629088" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ufA2MWmi5XiwWROoC7ztFxqbqn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "F:/ExchangeApp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
