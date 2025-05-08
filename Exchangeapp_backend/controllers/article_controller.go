@@ -1,16 +1,15 @@
 package controllers
 
 import (
-	"encoding/json"
 	"errors"
 	"exchangeapp/global"
 	"exchangeapp/models"
 	"log"
 	"net/http"
-	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-redis/redis"
+	"strconv"
+
 	"gorm.io/gorm"
 )
 
@@ -49,55 +48,47 @@ func CreateArticle(ctx *gin.Context) {
 }
 
 func GetArticles(ctx *gin.Context) {
-	log.Println("INFO: GetArticles invoked")
-	cachedData, err := global.RedisDB.Get(cacheKey).Result()
+	// 获取分页参数
+	pageStr := ctx.DefaultQuery("page", "1")
+	pageSize := 5 // 每页5篇文章
 
-	if err == redis.Nil {
-		log.Println("INFO: Cache miss, querying database")
-		var articles []models.Article
+	page, err := strconv.Atoi(pageStr)
+	if err != nil || page < 1 {
+		log.Println("ERROR: Invalid page number:", pageStr)
+		ctx.JSON(http.StatusBadRequest, gin.H{"error": "Invalid page number"})
+		return
+	}
 
-		if err := global.Db.Find(&articles).Error; err != nil {
-			if errors.Is(err, gorm.ErrRecordNotFound) {
-				log.Println("ERROR: No articles found:", err)
-				ctx.JSON(http.StatusNotFound, gin.H{"error": err.Error()})
-			} else {
-				log.Println("ERROR: Failed to query articles:", err)
-				ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
-			}
-			return
-		}
+	var articles []models.Article
+	// 计算偏移量
+	offset := (page - 1) * pageSize
 
-		articleJSON, err := json.Marshal(articles)
-		if err != nil {
-			log.Println("ERROR: Failed to marshal articles:", err)
+	// 分页查询
+	if err := global.Db.Limit(pageSize).Offset(offset).Find(&articles).Error; err != nil {
+		if errors.Is(err, gorm.ErrRecordNotFound) {
+			log.Println("ERROR: No articles found:", err)
+			ctx.JSON(http.StatusNotFound, gin.H{"error": "No articles found"})
+		} else {
+			log.Println("ERROR: Failed to query articles:", err)
 			ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
-			return
 		}
+		return
+	}
 
-		if err := global.RedisDB.Set(cacheKey, articleJSON, 10*time.Minute).Err(); err != nil {
-			log.Println("ERROR: Failed to cache articles:", err)
-			ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
-			return
-		}
-
-		log.Println("INFO: Articles retrieved from database and cached")
-		ctx.JSON(http.StatusOK, articles)
-
-	} else if err != nil {
-		log.Println("ERROR: Failed to retrieve cache:", err)
+	// 获取文章总数用于前端分页
+	var total int64
+	if err := global.Db.Model(&models.Article{}).Count(&total).Error; err != nil {
+		log.Println("ERROR: Failed to count articles:", err)
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
-	} else {
-		log.Println("INFO: Cache hit, retrieving articles from cache")
-		var articles []models.Article
-
-		if err := json.Unmarshal([]byte(cachedData), &articles); err != nil {
-			log.Println("ERROR: Failed to unmarshal cached articles:", err)
-			ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
-			return
-		}
-		ctx.JSON(http.StatusOK, articles)
 	}
+	log.Println("INFO: Articles retrieved from database and cached")
+	ctx.JSON(http.StatusOK, gin.H{
+		"articles": articles,
+		"total":    total,
+		"page":     page,
+		"pageSize": pageSize,
+	})
 }
 
 func GetArticleByID(ctx *gin.Context) {

@@ -10,7 +10,6 @@ import (
 
 func AuthMiddleWare() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
-		log.Println("INFO: Auth middleware invoked")
 		token := ctx.GetHeader("Authorization")
 		if token == "" {
 			log.Println("ERROR: Missing Authorization Header")
@@ -27,7 +26,6 @@ func AuthMiddleWare() gin.HandlerFunc {
 			return
 		}
 
-		log.Println("INFO: Token validated successfully for username:", username)
 		ctx.Set("username", username)
 		ctx.Next()
 	}
